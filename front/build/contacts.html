@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="header__inner inner">
+          <div class="header__wrap"> <a href="/" class="header__logo">
+				<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="48" viewBox="0 0 90 48">
+				    <defs>
+				        <path id="a" d="M.011 21.677c0 .34.288.613.63.613h1.244a.638.638 0 0 0 .643-.627v-8.28a.63.63 0 0 0-.643-.627H.641a.626.626 0 0 0-.63.626v8.295zm4.834-8.921a.618.618 0 0 0-.629.626v.627c0 .354.274.626.63.626h2.98v7.042c0 .34.288.613.63.613h1.258c.342 0 .63-.272.63-.613v-7.042h2.98c.356 0 .63-.272.63-.626v-.627a.618.618 0 0 0-.63-.626H4.846zm13.012 3.718c.698 0 1.204.259 1.436.627.192.3.424.49.766.49h.999c.232 0 .41-.177.41-.409 0-1.552-1.422-2.315-3.775-2.315-2.516 0-3.966 1.28-3.966 3.786 0 2.493 1.436 3.773 4.035 3.773 2.352 0 3.774-.763 3.774-2.315a.402.402 0 0 0-.41-.409h-.998c-.342 0-.575.19-.766.49-.233.368-.739.627-1.436.627-1.368 0-1.82-.667-1.82-2.166 0-1.512.452-2.179 1.751-2.179zm7.269 5.816c.232 0 .41-.177.41-.409v-8.717a.402.402 0 0 0-.41-.408h-1.491a.402.402 0 0 0-.41.408v8.717c0 .232.177.409.41.409h1.49zm4.956-6.878a.402.402 0 0 0-.41-.409h-1.49a.402.402 0 0 0-.411.409v3.813c0 2.261 1.258 3.201 3.036 3.201 1.026 0 1.71-.436 2.339-.967v.422c0 .232.178.409.41.409h1.49a.402.402 0 0 0 .411-.409v-6.47a.402.402 0 0 0-.41-.408h-1.49a.402.402 0 0 0-.411.409v4.454c-.492.49-1.122.953-1.792.953-.752 0-1.272-.463-1.272-1.594v-3.813zm14.558 4.862c0-2.778-5.047-2.125-5.047-3.255 0-.382.383-.64 1.327-.64.588 0 1.094.163 1.327.45a.938.938 0 0 0 .766.353h.998c.232 0 .41-.177.41-.408 0-1.417-1.422-1.907-3.665-1.907-1.928 0-3.474.613-3.474 2.152 0 2.751 5.047 2.125 5.047 3.255 0 .382-.383.64-1.532.64-.588 0-1.094-.163-1.327-.45a.938.938 0 0 0-.766-.353h-.998a.402.402 0 0 0-.41.408c0 1.417 1.422 1.907 3.665 1.907 2.134 0 3.68-.613 3.68-2.152zm6.475 2.016c.232-.04.41-.204.41-.409v-.708a.402.402 0 0 0-.41-.408h-.246c-.301 0-.56.081-.917.081-.697 0-1.176-.49-1.176-1.416v-2.438h1.86c.233 0 .41-.177.41-.409v-.79a.402.402 0 0 0-.41-.409h-1.86v-2.22a.402.402 0 0 0-.41-.408h-1.49a.402.402 0 0 0-.411.408v6.266c0 2.043.957 2.996 2.872 2.996.615 0 1.368-.054 1.778-.136zm8.937-2.942c.232 0 .41-.177.41-.409v-.381c0-2.397-1.463-3.691-3.898-3.691-2.42 0-3.898 1.335-3.898 3.786 0 2.466 1.464 3.773 3.898 3.773 2.188 0 3.652-.49 3.652-1.907a.402.402 0 0 0-.41-.408h-.999a.938.938 0 0 0-.766.354c-.232.286-.738.45-1.313.45-1.121 0-1.614-.477-1.71-1.567h5.034zm-3.488-2.97c1.012 0 1.505.545 1.546 1.567h-3.105c.055-1.022.574-1.566 1.56-1.566zm11.412-1.103a.402.402 0 0 0-.41-.408c-1.504 0-2.202.408-2.968.967v-.422a.402.402 0 0 0-.41-.409h-1.49a.402.402 0 0 0-.411.409v6.47c0 .231.178.408.41.408h1.49a.402.402 0 0 0 .411-.409v-4.25c.492-.585 1.04-.98 1.723-.98.356 0 .712.04 1.026.04h.219c.232 0 .41-.176.41-.408v-1.008zM2.37.534a.386.386 0 0 0-.394-.393H.543A.386.386 0 0 0 .15.534V8.91c0 .223.17.393.394.393h1.433c.223 0 .394-.17.394-.393V6.528c.592 0 1.17.275 1.525.85l.815 1.323c.21.34.565.602.986.602h1.209c.341 0 .433-.262.223-.602l-1.09-1.754c-.395-.628-.829-.995-1.368-1.152.566-.118 1.091-.576 1.367-1.151l.828-1.741c.158-.34.119-.602-.223-.602h-1.21c-.38 0-.748.235-.92.602l-.617 1.309c-.263.55-.762.863-1.525.863V.534zm6.172 8.795h-.237a.386.386 0 0 0-.394.393v.825c0 .196.237.406.463.411 3.303.068 5.056-.137 5.848-2.957l1.628-5.32c.052-.197-.092-.38-.303-.38h-1.353a.585.585 0 0 0-.54.432L12.436 6.56c-.565 0-1.028.255-1.462-1.12l-.84-2.708a.646.646 0 0 0-.58-.432h-1.34c-.21 0-.368.183-.302.38l.96 3.088c.735 2.356 1.777 2.336 3.13 2.336-.291 1.62-3.17 1.224-3.46 1.224zm10.266-.026a.39.39 0 0 0 .394-.402V2.702a.39.39 0 0 0-.394-.401h-1.433a.39.39 0 0 0-.394.401v6.2c0 .227.171.4.394.4h1.433zM16.955.966c0 .458.276.733.736.733h.802c.46 0 .736-.275.736-.733V.743c0-.458-.276-.732-.736-.732h-.802c-.46 0-.736.274-.736.732v.223zm8.018 8.337a.98.98 0 0 0 .868-.563l2.773-5.876c.145-.314.04-.563-.263-.563h-1.235a.966.966 0 0 0-.868.563L24.5 6.842l-1.748-3.978a.966.966 0 0 0-.867-.563h-1.236c-.302 0-.407.249-.263.563L23.16 8.74a.98.98 0 0 0 .867.563h.946z"/>
+				        <linearGradient id="b" x1="19.274%" x2="66.972%" y1="0%" y2="105.786%">
+				            <stop offset="0%" stop-color="#FFF"/>
+				            <stop offset="100%" stop-color="#EDEDED"/>
+				        </linearGradient>
+				        <path id="d" d="M23.778 5.173L32.853.735l1.644 10.05-12.233 8.176 1.514-13.788zm10.272 8.02l9.505 3.428-6.106 8.162-14.394-3.1 10.995-8.49zm-24.946-.085L.011 17.51l6.928 7.48 13.99-4.582-11.825-7.299zm-.173 15.345l-.725 10.055 9.958-2.244 3.016-14.377-12.25 6.566zM21.266 5.225L12.613.015l-2.516 9.87 11.473 9.207-.304-13.867z"/>
+				        <linearGradient id="e" x1="-8.473%" x2="31.586%" y1="12.106%" y2="169.741%">
+				            <stop offset="0%" stop-color="#03ADA3"/>
+				            <stop offset="100%" stop-color="#47FEC9"/>
+				        </linearGradient>
+				        <path id="g" d="M23.778 5.173L32.853.735l1.644 10.05-12.233 8.176 1.514-13.788zm10.272 8.02l9.505 3.428-6.106 8.162-14.394-3.1 10.995-8.49zm-24.946-.085L.011 17.51l6.928 7.48 13.99-4.582-11.825-7.299zm-.173 15.345l-.725 10.055 9.958-2.244 3.016-14.377-12.25 6.566zM21.266 5.225L12.613.015l-2.516 9.87 11.473 9.207-.304-13.867z"/>
+				        <linearGradient id="h" x1="20.041%" x2="77.216%" y1="101.174%" y2="3.277%">
+				            <stop offset="0%" stop-color="#03ADA3"/>
+				            <stop offset="100%" stop-color="#47FEC9"/>
+				        </linearGradient>
+				    </defs>
+				    <g fill="none" fill-rule="evenodd">
+				        <g transform="translate(22.021 25.562)">
+				            <mask id="c" fill="#fff">
+				                <use xlink:href="#a"/>
+				            </mask>
+				            <path fill="url(#b)" class="logo__text" d="M.011 21.677c0 .34.288.613.63.613h1.244a.638.638 0 0 0 .643-.627v-8.28a.63.63 0 0 0-.643-.627H.641a.626.626 0 0 0-.63.626v8.295zm4.834-8.921a.618.618 0 0 0-.629.626v.627c0 .354.274.626.63.626h2.98v7.042c0 .34.288.613.63.613h1.258c.342 0 .63-.272.63-.613v-7.042h2.98c.356 0 .63-.272.63-.626v-.627a.618.618 0 0 0-.63-.626H4.846zm13.012 3.718c.698 0 1.204.259 1.436.627.192.3.424.49.766.49h.999c.232 0 .41-.177.41-.409 0-1.552-1.422-2.315-3.775-2.315-2.516 0-3.966 1.28-3.966 3.786 0 2.493 1.436 3.773 4.035 3.773 2.352 0 3.774-.763 3.774-2.315a.402.402 0 0 0-.41-.409h-.998c-.342 0-.575.19-.766.49-.233.368-.739.627-1.436.627-1.368 0-1.82-.667-1.82-2.166 0-1.512.452-2.179 1.751-2.179zm7.269 5.816c.232 0 .41-.177.41-.409v-8.717a.402.402 0 0 0-.41-.408h-1.491a.402.402 0 0 0-.41.408v8.717c0 .232.177.409.41.409h1.49zm4.956-6.878a.402.402 0 0 0-.41-.409h-1.49a.402.402 0 0 0-.411.409v3.813c0 2.261 1.258 3.201 3.036 3.201 1.026 0 1.71-.436 2.339-.967v.422c0 .232.178.409.41.409h1.49a.402.402 0 0 0 .411-.409v-6.47a.402.402 0 0 0-.41-.408h-1.49a.402.402 0 0 0-.411.409v4.454c-.492.49-1.122.953-1.792.953-.752 0-1.272-.463-1.272-1.594v-3.813zm14.558 4.862c0-2.778-5.047-2.125-5.047-3.255 0-.382.383-.64 1.327-.64.588 0 1.094.163 1.327.45a.938.938 0 0 0 .766.353h.998c.232 0 .41-.177.41-.408 0-1.417-1.422-1.907-3.665-1.907-1.928 0-3.474.613-3.474 2.152 0 2.751 5.047 2.125 5.047 3.255 0 .382-.383.64-1.532.64-.588 0-1.094-.163-1.327-.45a.938.938 0 0 0-.766-.353h-.998a.402.402 0 0 0-.41.408c0 1.417 1.422 1.907 3.665 1.907 2.134 0 3.68-.613 3.68-2.152zm6.475 2.016c.232-.04.41-.204.41-.409v-.708a.402.402 0 0 0-.41-.408h-.246c-.301 0-.56.081-.917.081-.697 0-1.176-.49-1.176-1.416v-2.438h1.86c.233 0 .41-.177.41-.409v-.79a.402.402 0 0 0-.41-.409h-1.86v-2.22a.402.402 0 0 0-.41-.408h-1.49a.402.402 0 0 0-.411.408v6.266c0 2.043.957 2.996 2.872 2.996.615 0 1.368-.054 1.778-.136zm8.937-2.942c.232 0 .41-.177.41-.409v-.381c0-2.397-1.463-3.691-3.898-3.691-2.42 0-3.898 1.335-3.898 3.786 0 2.466 1.464 3.773 3.898 3.773 2.188 0 3.652-.49 3.652-1.907a.402.402 0 0 0-.41-.408h-.999a.938.938 0 0 0-.766.354c-.232.286-.738.45-1.313.45-1.121 0-1.614-.477-1.71-1.567h5.034zm-3.488-2.97c1.012 0 1.505.545 1.546 1.567h-3.105c.055-1.022.574-1.566 1.56-1.566zm11.412-1.103a.402.402 0 0 0-.41-.408c-1.504 0-2.202.408-2.968.967v-.422a.402.402 0 0 0-.41-.409h-1.49a.402.402 0 0 0-.411.409v6.47c0 .231.178.408.41.408h1.49a.402.402 0 0 0 .411-.409v-4.25c.492-.585 1.04-.98 1.723-.98.356 0 .712.04 1.026.04h.219c.232 0 .41-.176.41-.408v-1.008zM2.37.534a.386.386 0 0 0-.394-.393H.543A.386.386 0 0 0 .15.534V8.91c0 .223.17.393.394.393h1.433c.223 0 .394-.17.394-.393V6.528c.592 0 1.17.275 1.525.85l.815 1.323c.21.34.565.602.986.602h1.209c.341 0 .433-.262.223-.602l-1.09-1.754c-.395-.628-.829-.995-1.368-1.152.566-.118 1.091-.576 1.367-1.151l.828-1.741c.158-.34.119-.602-.223-.602h-1.21c-.38 0-.748.235-.92.602l-.617 1.309c-.263.55-.762.863-1.525.863V.534zm6.172 8.795h-.237a.386.386 0 0 0-.394.393v.825c0 .196.237.406.463.411 3.303.068 5.056-.137 5.848-2.957l1.628-5.32c.052-.197-.092-.38-.303-.38h-1.353a.585.585 0 0 0-.54.432L12.436 6.56c-.565 0-1.028.255-1.462-1.12l-.84-2.708a.646.646 0 0 0-.58-.432h-1.34c-.21 0-.368.183-.302.38l.96 3.088c.735 2.356 1.777 2.336 3.13 2.336-.291 1.62-3.17 1.224-3.46 1.224zm10.266-.026a.39.39 0 0 0 .394-.402V2.702a.39.39 0 0 0-.394-.401h-1.433a.39.39 0 0 0-.394.401v6.2c0 .227.171.4.394.4h1.433zM16.955.966c0 .458.276.733.736.733h.802c.46 0 .736-.275.736-.733V.743c0-.458-.276-.732-.736-.732h-.802c-.46 0-.736.274-.736.732v.223zm8.018 8.337a.98.98 0 0 0 .868-.563l2.773-5.876c.145-.314.04-.563-.263-.563h-1.235a.966.966 0 0 0-.868.563L24.5 6.842l-1.748-3.978a.966.966 0 0 0-.867-.563h-1.236c-.302 0-.407.249-.263.563L23.16 8.74a.98.98 0 0 0 .867.563h.946z" mask="url(#c)"/>
+				        </g>
+				        <mask id="f" fill="#fff">
+				            <use xlink:href="#d"/>
+				        </mask>
+				        <path fill="url(#e)" d="M23.778 5.173L32.853.735l1.644 10.05-12.233 8.176 1.514-13.788zm10.272 8.02l9.505 3.428-6.106 8.162-14.394-3.1 10.995-8.49zm-24.946-.085L.011 17.51l6.928 7.48 13.99-4.582-11.825-7.299zm-.173 15.345l-.725 10.055 9.958-2.244 3.016-14.377-12.25 6.566zM21.266 5.225L12.613.015l-2.516 9.87 11.473 9.207-.304-13.867z" mask="url(#f)"/>
+				        <mask id="i" fill="#fff">
+				            <use xlink:href="#g"/>
+				        </mask>
+				        <path fill="url(#h)" d="M23.778 5.173L32.853.735l1.644 10.05-12.233 8.176 1.514-13.788zm10.272 8.02l9.505 3.428-6.106 8.162-14.394-3.1 10.995-8.49zm-24.946-.085L.011 17.51l6.928 7.48 13.99-4.582-11.825-7.299zm-.173 15.345l-.725 10.055 9.958-2.244 3.016-14.377-12.25 6.566zM21.266 5.225L12.613.015l-2.516 9.87 11.473 9.207-.304-13.867z" mask="url(#i)"/>
+				    </g>
+				</svg>
+			</a> <button class="header__btn-menu btn-menu js-btn-menu" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+            <div class="header__right">
+              <div class="header__search search js-search">
+                <form role="search" method="get" id="searchform" class="searchform" action="https://dev.kyiv-itcluster.bbapps.io/">
+                  <div> <label class="screen-reader-text" for="s">Search for:</label> <input type="text" value="" name="s" id="s"> <input type="submit" id="searchsubmit" value="Search"> </div>
+                </form> <button class="search__btn js-search-btn" type="button">
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+</button> </div>
+              <nav class="header__nav">
+                <ul class="header__menu menu">
+                  <li><a href="#">Cluster members</a></li>
+                  <li><a href="#">About KYIV IT Cluster</a></li>
+                  <li><a href="#">IT in Ukraine</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- begin topic -->
+      <div class="topic topic_mod">
+        <div class="topic__bg"> <svg class="topic__bg-left" xmlns="http://www.w3.org/2000/svg" width="1153" height="681" viewBox="0 0 1153 681">
+			    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+			        <path d="M285.769 171.624L198.341 284.36l-97.724-22.432 42.489-90.816z"/>
+			        <path d="M187.097 219.625l111.193 89.382-24.133 97.317-90.062-44.067z"/>
+			        <path d="M237.125 323.212l87.428-112.736 97.723 22.431-42.488 90.817zM31.993 431.276l79.35-118.56 99.05 15.56-36.05 93.56z"/>
+			        <path d="M236.655 572.149L122.411 486.7l20.722-98.1 91.545 40.898z"/>
+			        <path d="M121.96 624.77l85.448-114.244 98.1 20.722-40.898 91.544z"/>
+			        <path d="M279.36 417.22l112.735 87.428-22.431 97.724-90.817-42.489z"/>
+			        <path d="M372.324 376.097L282.942 487.29l-97.317-24.133 44.067-90.062z"/>
+			        <path d="M444.337 470.464l-115.718-83.44 19.007-98.447 92.244 39.293z"/>
+			        <path d="M340.312 545.032l73.038-122.55 99.728 10.354-31.104 95.318z"/>
+			        <path d="M472.626 328.577l115.718 83.44-19.007 98.447-92.245-39.293z"/>
+			        <path d="M575.874 272.236L490.426 386.48l-98.1-20.722 40.898-91.545z"/>
+			        <path d="M638.482 373.24l-108.005-93.208 27.515-96.416L646.46 230.8z"/>
+			        <path d="M524.616 419.482l93.209-108.005 96.415 27.515-47.183 88.469z"/>
+			        <path d="M683.413 204.6l106.362 95.08-29.193 95.92-87.632-48.72z"/>
+			        <path d="M777.769 171.624L690.341 284.36l-97.724-22.432 42.489-90.816z"/>
+			        <path d="M840.157 277.324l-111.193-89.382 24.133-97.317 90.062 44.067z"/>
+			        <path d="M973.083 53.427l-75.165 121.257-99.533-12.094 32.763-94.76z"/>
+			        <path d="M882.23 126.23l123.805 70.887-8.612 99.894-95.846-29.436z"/>
+			        <path d="M729.617 322.928l87.429-112.735 97.723 22.431-42.489 90.817zm210-102l87.429-112.735 97.723 22.431-42.489 90.817zm-600.996 56.903l-109.615-91.31 25.828-96.88 89.278 45.632z"/>
+			    </g>
+			</svg> <svg class="topic__bg-right" xmlns="http://www.w3.org/2000/svg" width="1153" height="681" viewBox="0 0 1153 681">
+			    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+			        <path d="M285.769 171.624L198.341 284.36l-97.724-22.432 42.489-90.816z"/>
+			        <path d="M187.097 219.625l111.193 89.382-24.133 97.317-90.062-44.067z"/>
+			        <path d="M237.125 323.212l87.428-112.736 97.723 22.431-42.488 90.817zM31.993 431.276l79.35-118.56 99.05 15.56-36.05 93.56z"/>
+			        <path d="M236.655 572.149L122.411 486.7l20.722-98.1 91.545 40.898z"/>
+			        <path d="M121.96 624.77l85.448-114.244 98.1 20.722-40.898 91.544z"/>
+			        <path d="M279.36 417.22l112.735 87.428-22.431 97.724-90.817-42.489z"/>
+			        <path d="M372.324 376.097L282.942 487.29l-97.317-24.133 44.067-90.062z"/>
+			        <path d="M444.337 470.464l-115.718-83.44 19.007-98.447 92.244 39.293z"/>
+			        <path d="M340.312 545.032l73.038-122.55 99.728 10.354-31.104 95.318z"/>
+			        <path d="M472.626 328.577l115.718 83.44-19.007 98.447-92.245-39.293z"/>
+			        <path d="M575.874 272.236L490.426 386.48l-98.1-20.722 40.898-91.545z"/>
+			        <path d="M638.482 373.24l-108.005-93.208 27.515-96.416L646.46 230.8z"/>
+			        <path d="M524.616 419.482l93.209-108.005 96.415 27.515-47.183 88.469z"/>
+			        <path d="M683.413 204.6l106.362 95.08-29.193 95.92-87.632-48.72z"/>
+			        <path d="M777.769 171.624L690.341 284.36l-97.724-22.432 42.489-90.816z"/>
+			        <path d="M840.157 277.324l-111.193-89.382 24.133-97.317 90.062 44.067z"/>
+			        <path d="M973.083 53.427l-75.165 121.257-99.533-12.094 32.763-94.76z"/>
+			        <path d="M882.23 126.23l123.805 70.887-8.612 99.894-95.846-29.436z"/>
+			        <path d="M729.617 322.928l87.429-112.735 97.723 22.431-42.489 90.817zm210-102l87.429-112.735 97.723 22.431-42.489 90.817zm-600.996 56.903l-109.615-91.31 25.828-96.88 89.278 45.632z"/>
+			    </g>
+			</svg> </div>
+        <div class="topic__inner inner">
+          <div class="topic__wrap">
+            <h1 class="topic__title title-lg">We're Here To Help</h1>
+            <div class="topic__description">Get in touch by e-mail, phone or a live chat.</div>
+          </div>
+        </div>
+      </div>
+      <!-- end topic -->
+      <!-- begin contacts -->
+      <div class="contacts">
+        <div class="contacts__inner inner">
+          <h2 class="contacts__title title-md">Send Us a Message</h2>
+          <div class="contacts__wrap">
+            <div class="contacts__form form">
+              <form action="/" class="js-form">
+                <div class="form__out">
+                  <div class="form-field"> <input type="text" class="input" placeholder="Full Name"> </div>
+                  <div class="form-field"> <input type="text" class="input" placeholder="Your Email"> </div>
+                  <div class="form-field"> <input type="text" class="input" placeholder="What can we help you with?"> </div>
+                  <div class="form-field"> <textarea class="textarea" placeholder="Type here"></textarea> </div>
+                  <div class="form-field"> <button class="btn btn_blue" type="submit">Send Message</button> </div>
+                </div>
+                <div class="form__success">
+                  <div class="title-md">Thank you, your message was sent successfully.</div>
+                  <div class="form__success-img"> <img src="./img/illustration-4-mail.svg" alt="img"> </div>
+                </div>
+                <div class="form__error">
+                  <div class="title-md">Message was not sent, please reload the page and try sending again!</div>
+                </div>
+              </form>
+            </div>
+            <div class="contacts__info">
+              <div class="info-group">
+                <div class="info-group__field"> <a href="tel:270-693-0208" class="info-group__item">
+								
+<svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+270-693-0208
+							</a> </div>
+                <div class="info-group__field"> <a href="mailto:info@itcluster.kiev.ua" class="info-group__item">
+								
+<svg class="icon icon-email"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+info@itcluster.kiev.ua
+							</a> </div>
+              </div>
+              <div class="info-group">
+                <div class="info-group__label">BUSINESS HOURS</div>
+                <div class="info-group__field">
+                  <div class="info-group__item"> <svg class="icon icon-business-time"><use xlink:href="img/sprite.svg#icon-business-time"></use></svg>
+                    <p>Monday thru Friday</p>
+                    <p>9AM - 6PM EST</p>
+                  </div>
+                </div>
+              </div>
+              <div class="info-group">
+                <div class="info-group__label">LOCATIONS</div>
+                <div class="info-group__field">
+                  <div class="info-group__item"> <svg class="icon icon-location-office"><use xlink:href="img/sprite.svg#icon-location-office"></use></svg>
+                    <p>Kiev, Ukraine</p>
+                    <p><a href="#" class="info-group__link">Coworking Platforma Leonardo</a></p>
+                    <p>Boulevard of Bogdan Khmelnitsky 17/52</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end contacts -->
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__topic">
+          <div class="footer__subscrible subscrible">
+            <div class="subscrible__inner">
+              <div class="subscrible__label">Stay updated with Kyiv IT Cluster news</div>
+              <form action="/" class="subscrible__form">
+                <div class="subscrible__field">
+                  <div class="subscrible__input"> <input type="text" class="input input_white" placeholder="Your Email"> </div> <button class="subscrible__btn btn btn_md btn_iris" type="submit">Subscribe now</button> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__inner inner">
+            <div class="footer__cluster"> <a href="http://itcluster.kiev.ua/" target="_blank" class="cluster"><img src="./img/cluster.png" alt="cluster"></a> </div>
+            <div class="footer__soc-wrap">
+              <ul class="footer__soc soc">
+                <li class="soc__item"> <a href="#" class="soc__link"><img src="./img/fb.svg" alt="fb"></a> </li>
+                <li class="soc__item"> <a href="#" class="soc__link"><img src="./img/yt.svg" alt="yt"></a> </li>
+                <li class="soc__item"> <a href="#" class="soc__link"><img src="./img/ins.svg" alt="ins"></a> </li>
+                <li class="soc__item"> <a href="#" class="soc__link"><img src="./img/lin.svg" alt="lin"></a> </li>
+                <li class="soc__item"> <a href="#" class="soc__link"><img src="./img/telegram.svg" alt="telegram"></a> </li>
+              </ul> <a href="#" class="footer__soc-inf">Ukrainian Website</a> </div>
+          </div>
+        </div>
+        <div class="inner">
+          <hr class="hr"> </div>
+        <div class="footer__bottom">
+          <div class="footer__inner inner">
+            <div class="footer__information">
+              <div class="footer__address">City of Kiev, Ukraine. <a href="#" class="footer__address-link">Coworking Platforma</a> at Leonardo Business Centre</div>
+              <div class="footer__copy">
+                <div class="footer__copy-text">&copy; ITCluster Kyiv, Inc 2016 - 2018. All rights reserved. </div><a class="footer__policy" href="#">Privacy policy</a></div>
+            </div>
+            <div class="footer__created created">
+              <div class="created__text">Created by</div> <a href="#" class="created__logo"><img src="./img/logo-bba.svg" alt="img"></a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

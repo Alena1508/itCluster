@@ -1,0 +1,153 @@
+.tabs
+	text-align: center
+	&__out
+		position: relative
+		z-index: 100
+	&__list
+		vertical-align: top
+		font-size: 0
+		border-radius: 14px 0 14px 0 
+		background-color: $dodger-blue 
+		display: inline-block
+		+sm
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			padding-top: 15px
+			margin-top: -15px
+			border-radius: 2px
+			background-color: $white
+			visibility: hidden
+			opacity: 0
+			transition: opacity .3s, visibility .3s
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2)
+			.tabs.is-open &
+				opacity: 1
+				visibility: visible
+	&__item,
+	&__current
+		position: relative
+		min-width: 200px
+		font-family: $av
+		+f(16px,900,1)
+		color: $white
+		text-align: center
+		letter-spacing: 1px
+		cursor: pointer
+		user-select: none
+		border: 2px solid $dodger-blue
+		transition: background-color .3s, color .3s, border-color .3s, box-shadow .3s
+		background-color: $dodger-blue 
+		border-radius: 12px 0 12px 0 
+		vertical-align: top
+		display: inline-block
+		+sm
+			text-align: left
+			letter-spacing: inherit 
+	&__current
+		z-index: 101
+		display: none
+		+sm
+			display: block
+		.icon
+			position: absolute
+			top: 50%
+			right: 16px
+			font-size: 24px
+			margin-top: -12px
+			+rotate(180)
+	[data-tabs-current]
+		padding: 18px 40px 18px 24px
+		display: block
+	&__item
+		padding: 18px 22px
+		+sm
+			padding: 12px 40px 12px 24px
+			border-radius: 0
+			background-color: $white
+			color: $cool-grey
+			border: none 
+			display: block
+			&:before
+				position: absolute
+				content: ""
+				top: 14px
+				right: 25px
+				transform-origin: top right
+				width: 10px
+				height: 2px
+				+rotate(-45)
+				z-index: 1
+				opacity: 0
+				transition: opacity .3s
+				background-color: $dodger-blue 
+			&:after
+				position: absolute
+				content: ""
+				top: 21px
+				right: 30px
+				width: 5px
+				height: 2px
+				transform-origin: top right
+				+rotate(45)
+				opacity: 0
+				transition: opacity .3s
+				background-color: $dodger-blue 
+		+hover
+			background-color: $sky 
+			+sm
+				color: $dodger-blue 
+				background-color: $white
+		&:not(:first-child)
+			margin-left: -1px
+			+sm
+				margin: 0
+				border-top: 1px solid #C8C7CC 
+		&.is-active
+			box-shadow: 0 2px 10px 1px rgba(48, 161, 255, 0.5)
+			background-color: $white
+			color: $dodger-blue 
+			+sm
+				box-shadow: none
+				color: $dodger-blue 
+				&:before,
+				&:after
+					opacity: 1
+			+hover
+				color: $sky
+				boredr-color: $sky
+				background-color: $white
+				+sm
+					color: $dodger-blue 
+	&__container
+		padding: 40px 0
+		+sm
+			padding: 24px 0
+	&__tags
+		margin: 0 auto
+		max-width: 796px
+
+[data-tabs]
+	[data-tabs-control]
+		cursor: pointer
+
+		&[disabled],
+		&.is-disabled
+			cursor: not-allowed
+			+nosel
+	[data-tabs-wrapper]
+		position: relative
+	[data-tabs-container]
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0
+		visibility: hidden
+		transition: opacity 0.3s, visibility 0.3s
+		&.is-open
+			position: relative
+			opacity: 1
+			visibility: visible

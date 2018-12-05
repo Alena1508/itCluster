@@ -1,0 +1,206 @@
+.cards	
+	&__no-search
+		margin: 81px auto 120px
+		max-width: 451px
+		font-size: 24px
+		text-align: center
+		color: $purplish-grey
+		display: none
+		&.is-active
+			display: block
+.card
+	position: relative
+	padding: 24px 24px 65px
+	// height: 390px
+	overflow: hidden
+	border-radius: 10px 40px 
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03)
+	+sm
+		padding: 24px 10px 65px
+		// height: 736px
+	&:not(:first-child)
+		margin-top: 40px
+	&.is-show
+		.cards &
+			opacity: 1
+			visibility: visible
+	.cards &
+		opacity: 0
+		visibility: hidden
+		transition: opacity .2s visibility .2s
+	&.is-open
+		height: auto
+	&__wrap
+		display: table
+		width: 100%
+		table-layout: fixed
+		+sm
+			display: block
+	&__col
+		vertical-align: top
+		font-size: 16px
+		display: inline-block
+		+sm
+			margin-top: 10px
+	&__left
+		padding-right: 24px
+		width: 324px
+		border-right: solid 1px rgba(#979797, .28)
+		vertical-align: top
+		display: table-cell
+		+sm
+			padding-right: 0
+			border-right: none 
+			width: 100%
+			display: block
+	&__right
+		padding-left: 24px
+		vertical-align: top
+		line-height: 1.56
+		color: $purplish-grey
+		display: table-cell
+		+sm
+			margin-top: 24px
+			padding-left: 0
+			width: 100%
+			display: block
+	&__head
+		text-align: center
+	&__logo
+		margin-bottom: 11px
+		max-width: 210px
+		vertical-align: top
+		display: inline-block
+		img
+			max-width: 100%
+			max-height: 104px
+			display: block
+	&__title-lg
+		font-family: $av
+		font-size: 24px
+		font-weight: 900
+	&__title-md
+		margin-bottom: 3px
+		font-size: 16px
+		line-height: 1.375
+		font-weight: 900
+		display: block
+		.card__article &
+			max-width: 255px
+	&__description
+		margin-bottom: 24px
+		font-size: 16px
+		line-height: 1.75
+		color: $eggplant
+	&__item
+		position: relative
+		padding-left: 48px
+		display: block
+		&:not(:first-child)
+			margin-top: 23px
+		.icon
+			position: absolute
+			top: -11px
+			left: 0
+			color: $cool-grey 
+			font-size: 40px
+	&__footer
+		margin-top: 23px
+		.btn
+			width: 100%
+	&__group
+		&:not(:first-child)
+			margin-top: 18px
+	&__group-wrap
+		margin-top: 18px
+	&__label
+		margin-bottom: 10px
+		font-family: $av
+		font-size: 12px
+		font-weight: 900
+		letter-spacing: 1px
+		text-transform: uppercase
+		color: $eggplant
+	&__tag
+		margin-bottom: 3px
+		vertical-align: top
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 16px
+	&__group
+		p + p
+			margin-top: 15px
+	&__group-inner
+		max-width: 612px
+	&__row
+		font-size: 0
+		&:not(:last-child)
+			margin-bottom: 17px
+			+sm
+				margin-bottom: 10px
+	&__link
+		position: relative
+		padding: 5px 0 0 40px
+		font-size: 16px
+		line-height: 1.375
+		color: $purplish-grey
+		transition: color .3s 
+		display: block
+		+hover
+			color: $dodger-blue 
+			span
+				border-color: currentColor 
+		span
+			border-bottom: 1px solid transparent
+			transition: border-color .3s 
+		.icon
+			position: absolute
+			top: -5px
+			left: 0
+			color: $cool-grey 
+			font-size: 40px
+	&__projects
+		height: 0
+		line-height: 1.56
+		color: $purplish-grey 
+		border-top: 1px solid transparent
+		opacity: 0
+		visibility: hidden
+		overflow: hidden
+		+sm
+			padding-bottom: 0
+		.is-open &
+			margin-top: 16px
+			padding: 16px 0 0
+			opacity: 1
+			visibility: visible
+			overflow: initial 
+			height: auto
+			border-color: rgba(#979797, .28)
+	&__field
+		margin: 0 
+		+sm
+			margin: 0 -35px
+	&__project
+		padding: 0 35px
+		+sm
+			margin-top: 16px
+	&__more
+		position: absolute
+		right: 24px
+		bottom: 30px
+		font-size: 16px
+		font-weight: 900
+		line-height: 1
+		transition: color .3s
+		color: $dodger-blue
+		&:hover
+			color: lighten($dodger-blue, 20%) 
+		+sm
+			bottom: 24px
+a.card__title-md
+	color: $dodger-blue
+	transition: color .3s
+	+hover
+		color: lighten($dodger-blue, 20%) 
+	

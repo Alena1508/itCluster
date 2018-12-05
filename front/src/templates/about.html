@@ -1,0 +1,139 @@
+---
+title: About
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{{ header.block({ activeClass: 2 }) }}
+	{{ topic.block({
+		class: 'topic_mod',
+		title: "KYIV IT Cluster",
+		description: "We unite, educate, strengthen, inspire. <br>We are the platform for cooperation and uniting companies<br> of KYIV IT Ecosystem for reaching common goals."
+	}) }}
+	<!-- begin strategy -->
+	<div class="strategy">
+		<div class="strategy__inner inner">
+			{% set rows = [
+				{
+					title: 'Mission',
+					text: 'Improve the living standards of the region and the country by helping to grow the local IT ecosystem. Improve the living standards of the region and the country by helping to grow the local IT ecosystem.',
+					img: 'illustration-1.svg'
+				},
+				{
+					sideRight: true,
+					title: 'Strategic goal',
+					text: 'Unite the community and improve the factors of production, expertise and professionalism of the participants in order to make Kiev the leading IT location of Eastern Europe.',
+					img: 'illustration-2.svg'
+				},
+				{
+					title: 'General Strategy',
+					text: 'Make KYIV IT Cluster the center of development of information technologies and communications of the region and help realize the potential of local IT specialists.',
+					img: 'illustration-3.svg'
+				}
+			] %}
+			{% for row in rows %}
+			{% if row.sideRight %}
+			<div class="strategy__row">
+				<div class="strategy__img-wrap">
+					<h2 class="strategy__title-md title-md mob-show">{{ row.title }}</h2>
+					<div class="strategy__img">
+						<img src="./img/{{ row.img }}" alt="{{ row.title }}">
+					</div>
+				</div>
+				<div class="strategy__text">
+					<h2 class="strategy__title-md title-md mob-hide">{{ row.title }}</h2>
+					<p>{{ row.text }}</p>
+				</div>
+			</div>
+			{% else %}
+			<div class="strategy__row">
+				<div class="strategy__text">
+					<h2 class="strategy__title-md title-md mob-hide">{{ row.title }}</h2>
+					<p>{{ row.text }}</p>
+				</div>
+				<div class="strategy__img-wrap">
+					<h2 class="strategy__title-md title-md mob-show">{{ row.title }}</h2>
+					<div class="strategy__img">
+						<img src="./img/{{ row.img }}" alt="{{ row.title }}">
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+			<div class="strategy__footer">
+				<a href="#" class="btn">Download presentation</a>
+			</div>
+		</div>
+	</div>
+	<!-- end strategy -->
+	<!-- begin team -->
+	<div class="team">
+		<div class="team__inner inner">
+			<h2 class="team__title-md title-md">Management Team</h2>
+			<div class="team__row">
+				{% for item in [{
+					img: 'team-1.png',
+					name: 'Max Dybenko',
+					specialty: 'Head of Board of Directors'
+				}, {
+					img: 'team-2.png',
+					name: 'Nataly Veremeeva',
+					specialty: 'CEO'
+				}, {
+					img: 'team-3.png',
+					name: 'Igor Arkhypenko',
+					specialty: 'COO'
+				}] %}
+				<div class="team__col">
+					<div class="team__item">
+						<a href="#" class="team__img" style="background-image: url(./img/{{ item.img }});"></a>
+						<div class="team__text">
+							<div class="team__name">{{ item.name }}</div>
+							<a href="#" class="team__specialty">{{ item.specialty }}</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- end team -->
+	<!-- begin cooperation -->
+	<div class="cooperation">
+		<div class="cooperation__inner inner">
+			<div class="cooperation__wrap">
+				<h2 class="cooperation__title-md title-md">Cross-cluster and Communities Cooperation</h2>
+				<div class="cooperation__logos">
+					{% for img in ['communites-logo.jpg', 'logo2.png', 'communites-logo.jpg', 'communites-logo.jpg'] %}
+					<div class="cooperation__logo">
+						<img src="./img/{{ img }}" alt="img">
+					</div>
+					{% endfor %}
+				</div>
+				<div class="cooperation__title-sm">We are interested in:</div>
+				<div class="cooperation__row">
+					{% for text in ['Establishing connections with other clusters and international communities for organizing meetups and improving business connections between our members', 'Form consortiums for joint cooperation on relevant grant programs', 'Helping our members in finding good international partners and clients. '] %}
+					<div class="cooperation__item">{{ text }}</div>
+					{% endfor %}
+				</div>
+				<div class="cooperation__footer">Share our interests or have a different idea? <a href="#" class="link">Contact Us!</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- end cooperation -->
+	<!-- begin partnership -->
+	<div class="partnership">
+		<div class="partnership__inner inner">
+			<h3 class="partnership__title-md title-md">Media Partnership</h3>
+			<p>We want the world to know more about IT in Ukraine and Kyiv IT Region, as we have so much to offer.<br> Contact us to get the freshest information about the region or use the materials below.</p>
+			<p>You can get the Kyiv IT Cluster logo, brochure  and other <br>cluster-related information <a href="#" class="link">here</a>.</p>
+		</div>
+	</div>
+	<!-- end partnership -->
+	{{ match.block({
+		title: 'Are you a <span class="text-green">KYIV</span> Company? <br>Want to join our <span class="text-green">KYIV IT</span> Cluster <span class="text-green">Community</span>?'
+	}) }}
+	{{ footer.block({ class: "footer_border" }) }}
+
+{% endblock %}

@@ -1,0 +1,216 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 101
+	width: 100%
+	color: $white
+	transition: background-color .3s, box-shadow .3s
+	+md
+		color: $charcoal-grey
+	&.is-fixed,
+	&_light
+		color: $charcoal-grey
+		background-color: $white
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08)
+		.logo__text
+			fill: $black
+		.search__input .input,
+		.search input[type="text"]
+			border-color: $silver
+			color: $charcoal-grey
+		.search__btn,
+		.search input[type="submit"]
+			color: $cool-grey
+	&.is-open
+		.logo__text
+			+md
+				fill: $black
+	&__wrap
+		padding: 19px 0
+		border-bottom: 2px solid rgba($white, .1)
+		+clr
+	&__logo
+		float: left
+		margin: -4px 0 -14px
+		+md
+			margin: -4px 0 -10px
+	&__right
+		float: right
+		+clr
+		+md
+			position: absolute
+			top: 0
+			left: 100%
+			padding: 83px 15px 20px
+			width: 100vw
+			height: 100vh
+			text-align: center
+			overflow: auto
+			transition: transform .3s, background-color .3s
+			background-color: $white
+		.is-open &
+			+md
+				transform: translateX(-100%)
+	&__nav
+		margin: 11px 40px 0 0
+		float: left
+		+md
+			margin: 0
+			float: none
+	&__search
+		float: right
+		+md
+			margin-bottom: 20px
+			float: none
+	&__btn-menu
+		position: relative
+		float: right
+		z-index: 1
+		margin-top: 7px
+		display: none
+		+md
+			display: block
+.logo
+	position: relative
+	z-index: 1
+	+gpu
+	&__text
+		fill: $white
+		transition: fill .3s
+.menu
+	+md
+		font-size: 24px
+	&__item,
+	li
+		vertical-align: top
+		display: inline-block
+		+md
+			display: block
+		&:not(:first-child)
+			margin-left: 40px
+			+md
+				margin: 24px 0 0
+		&.is-active,
+		&.active
+			color: $aqua-green 
+	&__link,
+	a
+		color: currentColor
+		transition: border-color .3s, color .3s
+		border-bottom: 1px solid transparent
+		&:hover
+			border-color: currentColor 
+.search
+	position: relative
+	&.is-open
+		input[type="submit"]
+			z-index: 5
+		.input,
+		input[type="text"]
+			padding-right: 40px
+			width: 200px
+			font-size: 16px
+			&::placeholder
+				font-size: 16px
+			+md
+				width: 100%
+	.is-fixed &
+		.input,
+		input[type="text"]
+			color: $charcoal-grey 
+			border-color: $silver
+			&::placeholder
+				color: $silver
+	&__input
+		.input
+			padding: 10px
+			height: 40px
+			width: 40px
+			color: $white
+			font-size: 0
+			background-color: transparent
+			border: solid 2px $white
+			+md
+				padding-left: 42px
+				width: 100%
+				font-size: 16px
+				color: $charcoal-grey
+				border-color: $silver
+			&::placeholder
+				font-size: 0
+				color: $white
+				+md
+					font-size: 16px
+					color: $silver
+	&__btn
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 1
+		width: 40px
+		height: 40px
+		color: $white
+		line-height: 40px
+		text-align: center
+		transition: border-color .3s, color .3s
+		border-radius: 10px 0 10px 0
+		background-color: transparent
+		+md
+			left: 0
+			right: auto
+		.icon
+			vertical-align: middle
+			+md
+				color: $cool-grey
+				font-size: 20px
+		.icon-search
+			font-size: 14px
+	.screen-reader-text
+		display: none
+	input
+		&[type="text"]
+			padding: 10px
+			height: 40px
+			width: 40px
+			font-family: $av
+			color: $white
+			font-size: 0
+			background-color: transparent
+			border: solid 2px $white
+			border-radius: 14px 0
+			transition: border-color .3s, width .3s, color .3s
+			display: block
+			&::placeholder
+				font-size: 0
+				color: $white
+				+md
+					font-size: 16px
+					color: $silver
+			&:focus
+				&::placeholder
+					font-size: 0
+			+md
+				padding-left: 42px
+				width: 100%
+				font-size: 16px
+				color: $charcoal-grey
+				border-color: $silver
+		&[type="submit"]
+			position: absolute
+			top: 0
+			right: 0
+			width: 40px
+			height: 40px
+			color: $white
+			font-size: 0
+			line-height: 40px
+			text-align: center
+			transition: border-color .3s, color .3s
+			border-radius: 10px 0 10px 0
+			background-color: transparent
+			+md
+				left: 0
+				right: auto
+button.search__btn
+	line-height: 1

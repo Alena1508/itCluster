@@ -1,0 +1,11 @@
+import './_dotInit';
+import './_tabs';
+import './_fixedHeader';
+import './_openMenu';
+import './_search';
+import './_checkInputValue';
+import './_filter';
+import './_accordion';
+import './_slickInit';
+import './_contactFormSubmit';
+import './_load-more';

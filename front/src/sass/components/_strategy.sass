@@ -1,0 +1,51 @@
+.strategy
+	padding: 120px 0 60px
+	+sm
+		padding: 24px 0 40px
+	&__inner
+		max-width: 890px
+	&__row
+		width: 100%
+		table-layout: fixed
+		display: table
+		+sm
+			display: flex
+			flex-wrap: wrap
+		&:not(:first-child)
+			margin-top: 24px
+	&__text
+		padding-right: 20px
+		color: $charcoal-grey
+		vertical-align: middle
+		display: table-cell
+		+sm
+			padding: 0
+			width: 100%
+			order: 2
+			display: block
+	&__title-md
+		margin-bottom: 24px
+	&__img-wrap
+		padding: 19px
+		width: 342px
+		vertical-align: top
+		display: table-cell
+		+sm
+			padding: 0
+			margin-bottom: 20px
+			width: 100%
+			order: 1
+			display: block
+		& + .strategy__text
+			padding: 0 0 0 10px
+			text-align: right
+			+sm
+				padding: 0
+				text-align: left
+	&__img
+		img
+			max-width: 100%
+			display: block
+	&__footer
+		text-align: center
+		margin-top: 40px

@@ -1,0 +1,39 @@
+<!-- begin domains -->
+<div class="domains">
+	<div class="domains__inner inner">
+		<h2 class="domains__title title-md">To improve your search, select one or more <span class="text-blue">domains or technologies</span>.</h2>
+		<!-- begin tabs -->
+		<div class="tabs" data-tabs>
+			<div class="tabs__current"><span data-tabs-current></span>{{ mixins.icon('arrow-top') }}</div>
+			<div class="tabs__out">
+				<ul class="tabs__list">
+					<li class="tabs__item" data-tabs-control="tab-1">Domains</li>
+					<li class="tabs__item" data-tabs-control="tab-2">Technologies</li>
+				</ul>
+			</div>
+			<div class="tabs__wrap" data-tabs-wrapper>
+				<div class="tabs__container" data-tabs-container="tab-1">
+					<div class="tabs__tags tags">
+						{% set tags = ['Booking', 'Design', 'Fintech', 'HealthCare', 'HoReCa', 'Mobile', 'RealEstate', 'Web', 'Digital marketing', 'AdTech', 'Automotive', 'Internet of Things', 'Retail', 'BigData', 'Machine Learning & AI', 'E-Commerce', 'Logistics'] %}
+						<div class="tags__inner">
+							{% for text in tags %}
+								<a href="#" class="tag">{{ text }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div class="tabs__container" data-tabs-container="tab-2">
+					<div class="tabs__tags tags">
+						<div class="tags__inner">
+							{% for text in tags %}
+								<a href="#" class="tag tag_purple">{{ text }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end tabs -->
+	</div>
+</div>
+<!-- end domains -->

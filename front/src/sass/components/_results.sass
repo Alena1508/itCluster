@@ -1,0 +1,85 @@
+.results
+	padding: 36px 0 94px
+	min-height: calc(100vh - 80px - 276px)
+	+sm
+		min-height: 0 
+	.text-blue
+		font-weight: 900 
+	&__inner
+		max-width: 1070px
+	&__request
+		margin-bottom: 16px
+		font-size: 32px
+		line-height: 1.5
+		+sm
+			font-size: 26px
+	&__wrap
+		+clr
+	&__articles
+		overflow: hidden
+	&__item
+		padding: 24px 0
+		+clr
+		&:not(:last-child)
+			border-bottom: solid 1px $silver
+	&__img
+		float: left
+		width: 228px
+		padding-right: 18px
+		img
+			max-width: 100%
+			max-height: 104px
+			display: block
+	&__text
+		overflow: hidden
+		line-height: 1.56
+		color: $eggplant
+		+sm
+			float: left
+	&__title
+		margin-bottom: 8px
+		font-size: 24px
+		fw4
+		color: $purplish-grey
+		display: block
+	&__description
+		margin-bottom: 6px
+		font-size: 16px
+		line-height: 1.75
+		color: $purplish-grey
+	&__tags
+		float: right
+		padding-left: 100px
+		width: 325px
+		+md
+			padding-left: 0
+			width: 100%
+			float: none
+	&__group
+		&:not(:first-child)
+			margin-top: 40px
+			+md
+				margin-top: 20px
+	&__label
+		margin-bottom: 7px
+		font-size: 12px
+		font-weight: 900
+		letter-spacing: 1px
+		text-transform: uppercase
+		color: $eggplant
+	&__row
+		margin: -8px
+	&__pagination
+		margin-top: 19px
+	&__no-search
+		font-size: 24px
+		color: $purplish-grey
+		+sm
+			font-size: 18px
+	&__footer
+		margin-top: 80px
+		text-align: center
+		+sm
+			margin-top: 40px
+	&__btn
+		min-width: 200px

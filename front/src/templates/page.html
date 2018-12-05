@@ -1,0 +1,23 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	{% include "partials/_topic.html" %}
+	<div class="layout">
+		{% include "partials/_domains.html" %}
+		{% include "partials/_about.html" %}
+		{% include "partials/_about-it.html" %}
+		{% include "partials/_events.html" %}
+		{{ match.block({
+			title: '<span class="text-green">KYIV IT Cluster members</span> has reputation, maturity and strategic thinking.',
+			description: '<p>Hence, <span class="text-green text-bold">best IT Companies of KYIV</span>, the capital region of Ukraine, are listed here.</p> 
+			<p>Among them: Service companies (IT outsourcing), Startups, companies of IT Ecosystem (legal, HR, relocation, etc), technoparks, coworking spaces and everything else, that is part of our IT Ecosystem.</p>'
+		}) }}
+	</div>
+	{{ footer.block() }}
+
+{% endblock %}

@@ -1,0 +1,67 @@
+.about
+	position: relative
+	text-align: center
+	&__inner
+		position: relative
+		z-index: 1
+	&__bg
+		position: absolute
+		top: -120px
+		left: 0
+		bottom: -50px
+		width: 100%
+		+md
+			display: none
+	&__img
+		position: absolute
+		&[data-left-top]
+			top: 170px
+			left: 0
+		&[data-left-bottom]
+			left: 0
+			bottom: 0
+		&[data-right-top]
+			top: 0
+			right: -30px
+		&[data-right-middle]
+			top: 160px
+			right: 0
+		&[data-right-bottom]
+			top: 430px
+			right: 0
+	&__wrap
+		padding: 80px 35px
+		border-radius: 20px
+		background-color: $white
+		box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03)
+		+lg
+			padding: 80px 16px
+		+sm
+			padding: 24px 10px
+	&__title
+		margin-bottom: 24px
+	&__text
+		margin: 0 auto
+		max-width: 840px
+		line-height: 1.75
+		color: $eggplant 
+		p + p
+			margin-top: 24px
+	&__row
+		margin: 40px -20px 0
+		display: flex
+		flex-wrap: wrap
+		+lg
+			margin: 40px -12px 0
+		+sm
+			margin-top: 24px
+	&__col
+		flex: 0 0 33.3%
+		padding: 0 20px
+		+lg
+			padding: 0 12px
+		+sm
+			flex: 0 0 100% 
+		&:not(:first-child)
+			+sm
+				margin-top: 24px 

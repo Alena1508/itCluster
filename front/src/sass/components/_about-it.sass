@@ -1,0 +1,99 @@
+.about-it
+	position: relative
+	padding: 177px 0 100px
+	line-height: 1.75
+	+lg
+		padding: 120px 0 60px
+	+sm
+		padding: 80px 0 40px
+	&__inner
+		position: relative
+		z-index: 1
+	&__bg
+		position: absolute
+		top: 0
+		left: 50%
+		bottom: 0
+		width: 1440px
+		margin-left: -720px
+		+md
+			display: none
+	&__img
+		position: absolute
+		&[data-top]
+			top: 130px
+			right: 80px
+		&[data-top-right]
+			top: 280px
+			right: 0
+		&[data-middle]
+			top: 51%
+			right: 412px
+		&[data-left-middle]
+			top: 50%
+			left: 50%
+			margin: -47px 0 0 -646px
+
+	&__right
+		float: right
+		padding-right: 45px
+		width: 55.9%
+		+lg
+			padding-right: 75px 
+		+md
+			padding-right: 0
+		+sm
+			float: none
+			width: 100%
+	&__left
+		float: right
+		padding: 0 37px 0 80px
+		width: 44.1%
+		+lg
+			padding: 0 27px 0 76px
+		+md
+			padding-left: 0
+		+sm
+			float: none
+			margin-top: 14px
+			padding: 0
+			width: 100%
+	&__title
+		margin-bottom: 24px
+		+sm
+			margin-bottom: 6px
+			text-align: center
+	&__footer
+		margin-top: 40px
+
+.fortune
+	position: relative
+	line-height: 1.4
+	+clr
+	&__img 
+		float: right
+		img,
+		svg
+			max-width: 100%
+			height: auto
+			display: block
+	&__info
+		float: right
+		margin-top: -12% 
+		padding-bottom: 10px
+		width: 245px
+		font-size: 16px
+		font-weight: 500
+		text-align: right
+		color: $charcoal-grey
+		+sm
+			width: 162px
+	&__resource
+		font-size: 14px
+		text-align: right
+		color: #30a1ff
+		color: $dodger-blue
+		border-bottom: 1px solid
+		transition: border-color .3s
+		+hover 
+			border-color: transparent 

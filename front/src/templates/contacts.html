@@ -1,0 +1,90 @@
+---
+title: Contacts
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	{{ topic.block({
+		class: 'topic_mod',
+		title: "We're Here To Help",
+		description: "Get in touch by e-mail, phone or a live chat."
+	}) }}
+	<!-- begin contacts -->
+	<div class="contacts">
+		<div class="contacts__inner inner">
+			<h2 class="contacts__title title-md">Send Us a Message</h2>
+			<div class="contacts__wrap">
+				<div class="contacts__form form">
+					<form action="/" class="js-form">
+						<div class="form__out">
+							<div class="form-field">
+								<input type="text" class="input" placeholder="Full Name">
+							</div>
+							<div class="form-field">
+								<input type="text" class="input" placeholder="Your Email">
+							</div>
+							<div class="form-field">
+								<input type="text" class="input" placeholder="What can we help you with?">
+							</div>
+							<div class="form-field">
+								<textarea class="textarea" placeholder="Type here"></textarea>
+							</div>
+							<div class="form-field">
+								<button class="btn btn_blue" type="submit">Send Message</button>
+							</div>
+						</div>
+						<div class="form__success">
+							<div class="title-md">Thank you, your message was sent successfully.</div>
+							<div class="form__success-img">
+								<img src="./img/illustration-4-mail.svg" alt="img">
+							</div>
+						</div>
+						<div class="form__error">
+							<div class="title-md">Message was not sent, please reload the page and try sending again!</div>
+						</div>
+					</form>
+				</div>
+				<div class="contacts__info">
+					<div class="info-group">
+						<div class="info-group__field">
+							<a href="tel:270-693-0208" class="info-group__item">
+								{{ mixins.icon('phone') }}270-693-0208
+							</a>
+						</div>
+						<div class="info-group__field">
+							<a href="mailto:info@itcluster.kiev.ua" class="info-group__item">
+								{{ mixins.icon('email') }}info@itcluster.kiev.ua
+							</a>
+						</div>
+					</div>
+					<div class="info-group">
+						<div class="info-group__label">BUSINESS HOURS</div>
+						<div class="info-group__field">
+							<div class="info-group__item">
+								{{ mixins.icon('business-time') }}
+								<p>Monday thru Friday</p>
+								<p>9AM - 6PM EST</p>
+							</div>
+						</div>
+					</div>
+					<div class="info-group">
+						<div class="info-group__label">LOCATIONS</div>
+						<div class="info-group__field">
+							<div class="info-group__item">
+								{{ mixins.icon('location-office') }}
+								<p>Kiev, Ukraine</p>
+								<p><a href="#" class="info-group__link">Coworking Platforma Leonardo</a></p>
+								<p>Boulevard of Bogdan Khmelnitsky 17/52</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contacts -->
+	{{ footer.block() }}
+
+{% endblock %}

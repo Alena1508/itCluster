@@ -1,0 +1,26 @@
+---
+title: No search results
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block({ class: 'header_light' }) }}
+	<div class="wrapper">
+		<!-- begin search -->
+		<div class="results">
+			<div class="results__inner inner">
+				<div class="results__request">Results for "32zv"</div>
+				<div class="results__wrap">
+					<div class="results__no-search">No search results</div>
+				</div>
+				<div class="results__footer">
+					<a href="#" class="results__btn btn btn_blue">Home</a>
+				</div>
+			</div>
+		</div>
+		<!-- end search -->
+	</div>
+	{{ footer.block() }}
+
+{% endblock %}

@@ -1,0 +1,103 @@
+.events
+	padding: 100px 0 160px
+	line-height: 1.75
+	overflow: hidden
+	+lg
+		padding: 60px 0 120px
+	+sm
+		padding: 40px 0 80px
+	&__left
+		float: left
+		padding: 30px 45px 0 80px
+		width: 43.5%
+		+lg
+			padding: 30px 27px 0 76px
+			width: 50%
+		+md
+			padding-left: 0
+		+sm
+			float: none
+			padding: 0
+			width: 100%
+	&__wrap
+		+lg
+			max-width: 397px
+		+sm
+			max-width: 100%
+	&__right
+		float: right
+		width: 56.5%
+		+lg
+			padding-right: 75px
+			width: 50%
+		+md
+			padding-right: 0
+		+sm
+			float: none
+			margin-top: 23px
+			width: 100%
+	&__title
+		margin-bottom: 24px
+	&__footer
+		margin-top: 40px
+	&__row
+		margin: 0 -20px
+		display: flex
+		flex-wrap: wrap
+		+clr
+		+lg
+			display: block
+	&__col
+		padding: 0 20px
+		flex: 0 0 50%
+		+lg
+			float: right
+			width: 100%
+			max-width: 360px
+		+sm
+			float: left
+			max-width: 100%
+		&:not(:first-child)
+			+lg
+				display: none
+
+.event
+	height: 100%
+	border-radius: 14px 0 14px 0
+	background-color: $white
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03)
+	&__img
+		padding-bottom: 56.5%
+		border-radius: 14px 0 14px 0
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		display: block
+	&__wrap
+		padding: 16px 16px 35px
+	&__title
+		margin-bottom: 8px
+		font-family: $av
+		font-size: 24px
+		font-weight: 900
+		line-height: 1.375
+	&__place
+		margin-bottom: 4px
+		font-size: 16px
+		font-weight: 900
+		line-height: 1.75
+		color: $purple
+		transition: color .3s
+		display: block
+		+hover
+			color: lighten($purple, 20%)
+	&__pdf
+		&:not(:last-child)
+			margin-bottom: 4px
+	&__address
+		font-family: $av
+		font-size: 14px
+		line-height: 1.35
+		color: #4a4a4a
+		&:not(:last-child)
+			margin-bottom: 4px

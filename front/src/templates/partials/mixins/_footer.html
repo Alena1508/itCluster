@@ -1,0 +1,65 @@
+
+{% import "partials/mixins/_mixins.html" as mixins %}
+{% macro block(props) %}
+<!-- begin footer -->
+<div class="footer{% if props.class %} {{ props.class }}{% endif %}">
+	<div class="footer__topic">
+		<div class="footer__subscrible subscrible">
+			<div class="subscrible__inner">
+				<div class="subscrible__label">Stay updated with Kyiv IT Cluster news</div>
+				<form action="/" class="subscrible__form">
+					<div class="subscrible__field">
+						<div class="subscrible__input">
+							<input type="text" class="input input_white" placeholder="Your Email">
+						</div>
+						<button class="subscrible__btn btn btn_md btn_iris" type="submit">Subscribe now</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer__middle">
+		<div class="footer__inner inner">
+			<div class="footer__cluster">
+				<a href="http://itcluster.kiev.ua/" target="_blank" class="cluster"><img src="./img/cluster.png" alt="cluster"></a>
+			</div>
+			<div class="footer__soc-wrap">
+				<ul class="footer__soc soc">
+					<li class="soc__item">
+						<a href="#" class="soc__link"><img src="./img/fb.svg" alt="fb"></a>
+					</li>
+					<li class="soc__item">
+						<a href="#" class="soc__link"><img src="./img/yt.svg" alt="yt"></a>
+					</li>
+					<li class="soc__item">
+						<a href="#" class="soc__link"><img src="./img/ins.svg" alt="ins"></a>
+					</li>
+					<li class="soc__item">
+						<a href="#" class="soc__link"><img src="./img/lin.svg" alt="lin"></a>
+					</li>
+					<li class="soc__item">
+						<a href="#" class="soc__link"><img src="./img/telegram.svg" alt="telegram"></a>
+					</li>
+				</ul>
+				<a href="#" class="footer__soc-inf">Ukrainian Website</a>
+			</div>
+		</div>
+	</div>
+	<div class="inner">
+		<hr class="hr">
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__inner inner">
+			<div class="footer__information">
+				<div class="footer__address">City of Kiev, Ukraine. <a href="#" class="footer__address-link">Coworking Platforma</a> at Leonardo Business Centre</div>
+				<div class="footer__copy"><div class="footer__copy-text">&copy; ITCluster Kyiv, Inc 2016 - 2018. All rights reserved. </div><a class="footer__policy" href="#">Privacy policy</a></div>
+			</div>
+			<div class="footer__created created">
+				<div class="created__text">Created by</div>
+				<a href="#" class="created__logo"><img src="./img/logo-bba.svg" alt="img"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end footer -->
+{% endmacro %}

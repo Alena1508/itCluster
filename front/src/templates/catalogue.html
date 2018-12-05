@@ -1,0 +1,225 @@
+---
+title: Catalogue
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block({activeClass: 1}) }}
+	{{ topic.block({
+		class: 'topic_mod',
+		title: "The List of Kyiv IT Cluster Members",
+		description: "Here you can find both IT companies and companies of related ecosystem (hr, legal, etc.). Feel free to search for the   match, expore their websites yourself or - ask us for an advice."
+	}) }}
+	<!-- begin wrapper -->
+	<div class="wrapper">
+		<!-- begin catalogue -->
+		<div class="catalogue">
+			<div class="catalogue__inner inner">
+				<!-- begin filter -->
+				<div class="catalogue__filter filter js-filter" data-accordion>
+					<a href="#" class="filter__trigger" data-accordion-trigger>Filter by Engagement model, Domains, Technologies{{ mixins.icon('arrow-top') }}</a>
+					<div class="filter__container" data-accordion-container>
+						<div class="filter__container-wrap">
+							<div class="filter__topic">
+								<button class="filter__apply btn btn_bord btn_sm js-filter-apply" type="button">Apply</button>
+							</div>
+							<div class="filter__wrap">
+								<div class="filter__row row">
+									<div class="filter__col col col-33 col-sm-100">
+										<div class="filter__label">Engagement model</div>
+										<select class="select select_engagement_model js-select" name="character" multiple="multiple">
+											<option value="Dedicated Development Team">Dedicated Development Team</option>
+											<option value="Lois">Lois Griffin</option>
+											<option value="Chris">Chris Griffin</option>
+											<option value="Meg">Meg Griffin</option>
+											<option value="Stewie">Stewie Griffin</option>
+											<option value="Cleveland">Cleveland Brown</option>
+											<option value="Joe">Joe Swanson</option>
+											<option value="Quagmire">Glenn Quagmire</option>
+											<option value="Evil Monkey">Evil Monkey</option>
+											<option value="Herbert">John Herbert</option>
+										</select>
+									</div>
+									<div class="filter__col col col-33 col-sm-100">
+										<div class="filter__label">Domain</div>
+										<select class="select select_domain js-select" name="character" multiple="multiple">
+											<option value="Peter">Peter Griffin</option>
+											<option value="Lois">Lois Griffin</option>
+											<option value="Chris">Chris Griffin</option>
+											<option value="Meg">Meg Griffin</option>
+											<option value="Stewie">Stewie Griffin</option>
+											<option value="Cleveland">Cleveland Brown</option>
+											<option value="Joe">Joe Swanson</option>
+											<option value="Quagmire">Glenn Quagmire</option>
+											<option value="Evil Monkey">Evil Monkey</option>
+											<option value="Herbert">John Herbert</option>
+										</select>
+									</div>
+									<div class="filter__col col col-33 col-sm-100">
+										<div class="filter__label">Technologies</div>
+										<select class="select select_technology js-select" name="character" multiple="multiple">
+											<option value="Peter">Peter Griffin</option>
+											<option value="Lois">Lois Griffin</option>
+											<option value="Chris">Chris Griffin</option>
+											<option value="Meg">Meg Griffin</option>
+											<option value="Stewie">Stewie Griffin</option>
+											<option value="Cleveland">Cleveland Brown</option>
+											<option value="Joe">Joe Swanson</option>
+											<option value="Quagmire">Glenn Quagmire</option>
+											<option value="Evil Monkey">Evil Monkey</option>
+											<option value="Herbert">John Herbert</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end filter -->
+				<!-- begin cards -->
+				<div class="cards js-cards">
+					<div class="cards__no-search js-cards-no-search">No companies were found by parameters. Please change the filtering data</div>
+					<div class="cards__wpap" id="cards">
+						{% for value in ['Dedicated_Development_Team','Peter, Lois','Chris','Meg','Stewie','Cleveland','Joe','Quagmire','Glenn Quagmire, Evil Monkey','Herbert, John Herbert, Glenn Quagmire'] %}
+							<!-- begin card -->
+							<div class="card js-card" data-tag="{{ value }}">
+								<div class="card__wrap">
+									<div class="card__left">
+										<div class="card__head">
+											<a href="#" class="card__logo">
+												<img src="./img/logo-1.png" alt="img">
+											</a>
+											<div class="card__title-lg  name">BrandTuitive</div>
+											<div class="card__description">Unexpected Thinking</div>
+										</div>
+										<ul class="card__list">
+											<li class="card__item">
+												{{ mixins.icon('engagement-model') }} DDT, T&M, Turn-key solutions
+											</li>
+											<li class="card__item">
+												{{ mixins.icon('people') }} 250 people
+											</li>
+										</ul>
+										<div class="card__footer">
+											<a href="#" class="btn btn_blue">www.brandtuitive.com</a>
+										</div>
+									</div>
+									<div class="card__right">
+										<div class="card__group">
+											<div class="card__label">Domain</div>
+											{% set domains = ['Сasino','AdTech','Artificial Intelligence','Augmented Reality','BigData','booking','Blockchain','Design','CRM', 'E-Commerce', 'Automotive','Design','CRM', 'E-Commerce', 'Automotive'] %}
+											<p data-dot="60">
+												{% for text in domains %}
+												<span class="card__tag">{{ text }}</span>
+												{% endfor %}
+											</p>
+										</div>
+										<div class="card__group">
+											<div class="card__label">Technology</div>
+											{% set technology = ['Angular JS','Drupal','UI/UX','Swift','Mobile','Symfony','Drupal','UI/UX','Angular JS', 'Mobile', 'Symfony', 'Swift', 'Mobile', 'Symfony', 'Swift', 'Mobile', 'Symfony', 'Swift', 'Swift', 'Mobile', 'Symfony', 'Swift'] %}
+											<p data-dot="60">
+												{% for text in technology %}
+												<span class="card__tag">{{ text }}</span>
+												{% endfor %}
+											</p>
+										</div>
+										<div class="card__group-wrap" data-dot="100">
+											<div class="card__group">
+												<div class="card__label">About company</div>
+												<p>Okay, you’ve decided you want to make money with Affiliate Marketing. So, you join some affiliate programs and start submitting free ads to newsletters and free advertising classifieds sites. You’re going to make BIG money now — right? free advertising classifieds sites. You’re going to make BIG money now — right?</p>
+												<p>Nope! Sorry! Just sending out a few ads is not going to do it. Not if you want to be a real success. You must first determine your passion. I mean other than making the money! What is your hobby? What do you know how to do REALLY well? What is your job? Everyone has something that is their own special talent. Find yours. You probably have more than one thing that you are very interested in and do well.</p>
+											</div>
+											<div class="card__group">
+												<div class="card__group-inner">
+													<div class="card__label">Company articles</div>
+													<div class="card__row row">
+														<div class="card__col col col-50 col-sm-100">
+															<a href="#" class="card__link">
+																{{ mixins.icon('articles') }}
+																<span>Addiction When Gambling Becomes A Problem</span>
+															</a>
+														</div>
+														<div class="card__col col col-50 col-sm-100">
+															<a href="#" class="card__link">
+																{{ mixins.icon('articles') }}
+																<span>How To Protect Your Computer Wery Useful Tips</span>
+															</a>
+														</div>
+														<div class="card__col col col-50 col-sm-100">
+															<a href="#" class="card__link">
+																{{ mixins.icon('articles') }}
+																<span>Make Myspace Your Best Designed Space</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card__group">
+												<div class="card__group-inner">
+													<div class="card__label">Certificates / Rewards / Achievements</div>
+													<div class="card__row row">
+														<div class="card__col col col-50 col-sm-100">
+															<a href="#" class="card__link">
+																{{ mixins.icon('certificates') }}
+																<span>V7 Digital Photo Printing</span>
+															</a>
+														</div>
+														<div class="card__col col col-50 col-sm-100">
+															<a href="#" class="card__link">
+																{{ mixins.icon('certificates') }}
+																<span>Looking For Your Dvd Printing Solution</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card__projects">
+									<div class="card__label">Projects</div>
+									<div class="card__field row js-slider">
+										{% set projects = [
+											{
+												title: 'Project Name',
+												text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis elementum. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Placerat duis ultricies lacusds"
+											},
+											{
+												title: 'How To Meet That Special Someone',
+												text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+											},
+											{
+												title: 'Project Name',
+												text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis elementum."
+											},
+											{
+												title: 'Project Name',
+												text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis elementum."
+											}
+										] %}
+										{% for item in projects %}
+											<div class="card__project col col-33 col-sm-100">
+												<div class="card__article">
+													<a href="#" class="card__title-md">{{ item.title }}</a>
+													<p>{{ item.text }}</p>
+												</div>
+											</div>
+										{% endfor %}
+									</div>
+								</div>
+								<a href="#" data-dot-open="View more" data-dot-close="View less" class="card__more js-dot-trigger">View more</a>
+							</div>
+							<!-- end card -->
+						{% endfor %}
+					</div>
+				</div>
+				<!-- end cards -->
+			</div>
+		</div>
+		<!-- end catalogue -->
+	</div>
+	<!-- end wrapper -->
+	{{ footer.block({ class: "footer_border" }) }}
+
+{% endblock %}

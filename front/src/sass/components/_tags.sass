@@ -1,0 +1,37 @@
+.tags
+	font-size: 0
+	&__inner
+		margin: -8px
+		+sm
+			margin: -4px
+.tag
+	margin: 8px
+	padding: 6px 17px
+	font-family: $av
+	+f(16px,400,1)
+	text-align: center
+	color: $dodger-blue
+	border-radius: 28px
+	border: solid 2px $dodger-blue
+	transition: background-color .3s, border-color .3s, color .3s
+	vertical-align: top
+	display: inline-block
+	+sm
+		padding: 6px 10px 
+		margin: 4px
+	&:hover
+		color: $white 
+		border-color: $baby-blue
+		background-color: $baby-blue
+	&:active
+		border-color: $dodger-blue 
+		background-color: $dodger-blue 
+	&_purple
+		color: $purple  
+		border-color: $purple 
+		&:hover 
+			border-color: $light-purple
+			background-color: $light-purple
+		&:active
+			border-color: $purple
+			background-color: $purple

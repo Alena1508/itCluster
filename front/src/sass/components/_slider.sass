@@ -1,0 +1,50 @@
+.slick-dots
+	margin-top: 20px
+	text-align: center
+	display: none !important
+	+sm
+		display: block !important
+	li
+		margin: 6px
+		vertical-align: top
+		display: inline-block
+		&.slick-active
+			button
+				background-color: #30a1ff 
+	button
+		height: 10px
+		width: 10px
+		font-size: 0
+		border-radius: 50% 
+		transition: background-color
+		background-color: $silver 
+		display: block
+
+.slick-arrow
+	position: absolute
+	z-index: 101
+	top: 50%
+	margin-top: -7px
+	font-size: 0
+	background-color: transparent 
+	background-color: $white 
+	+sm
+		display: none !important
+	&:before
+		position: absolute
+		content: "" 
+		top: -10px
+		left: -10px
+		right: -10px
+		bottom: -10px
+	+hover
+		.icon
+			color: $dodger-blue 
+	.icon
+		font-size: 15px
+		color: $silver
+		transition: color .3s
+.slick-prev
+	left: 0
+.slick-next 
+	right: 0

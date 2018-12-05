@@ -1,0 +1,157 @@
+.footer
+	&__topic
+		position: relative
+		+clr
+	&__left
+		float: left
+		width: 64%
+		+lg
+			float: none
+			width: 100%
+		+sm
+			display: none
+	&__right
+		float: right
+		width: 36%
+		+lg
+			float: none
+			padding-right: 170px
+			margin-top: 40px
+			width: 100%
+		+sm
+			margin-top: 0
+			padding-right: 0
+	&__row
+		margin: 0 -15px
+		+clr
+	&__col
+		float: left
+		padding: 0 15px
+		+sm
+			float: none
+		&:not(:first-child)
+			+sm
+				margin-top: 17px
+	&__title
+		font-size: 16px
+		font-weight: 900
+		line-height: 1.56
+		transition: color .3s
+		color: $dodger-blue
+		+hover
+			color: $sky 
+	&__list
+		margin-top: 8px
+	&__item
+		font-size: 16px
+		line-height: 1.56
+		&:not(:first-child)
+			margin-top: 4px
+		a
+			color: $charcoal-grey
+			transition: border-color .3s
+			border-bottom: 1px solid transparent
+			+hover
+				border-color: currentColor 
+	&__label
+		margin-bottom: 17px
+		font-size: 16px
+		line-height: 1.56
+		color: $charcoal-grey
+	&__middle
+		padding: 25px 0
+	&__soc-wrap
+		float: right
+		margin-top: 18px
+		+sm
+			float: none
+			text-align: center
+	&__soc,
+	&__soc-inf
+		vertical-align: middle
+		display: inline-block
+	&__soc
+		margin-right: 12px
+		+sm
+			margin: 0 0 24px
+			display: block
+	&__soc-inf
+		font-size: 16px
+		font-weight: 900
+		line-height: 1.56
+		color: $dodger-blue
+	&__cluster
+		float: left
+		+sm
+			float: none
+			text-align: center
+	&__bottom
+		padding: 25px 0 13px
+	&__created
+		float: right
+	&__address
+		margin-bottom: 17px
+		color: $eggplant
+		+sm
+			width: 100%
+			padding: 0 34px
+			order: 1
+			text-align: center
+			display: block
+	&__address-link
+		font-weight: 900
+		color: $dodger-blue
+		transition: border-color .3s
+		border-bottom: 1px solid transparent
+		+hover
+			border-color: currentColor
+	&__copy
+		color: $tundora 
+		font-size: 12px
+		+sm
+			position: relative
+			margin: 16px 0
+			width: 100%
+			order: 2
+			color: #4a4a4a
+			display: block
+	&__copy-text
+		display: inline
+		+sm
+			margin-bottom: 8px
+			display: block
+	&__policy
+		margin-left: 16px
+		color: $dodger-blue
+		font-weight: 900
+		transition: border-color .3s
+		border-bottom: 1px solid transparent
+		+hover
+			border-color: currentColor
+		+sm
+			position: absolute
+			bottom: -43px
+			left: 0
+			margin-left: 0
+	&__information
+		float: left
+		+sm
+			float: none
+	&__created
+		float: right
+
+.cluster
+	vertical-align: top
+	display: inline-block
+	img
+		max-width: 100%
+		display: block
+.created
+	color: $charcoal-grey 
+	font-size: 12px
+	&__text,
+	&__logo
+		vertical-align: middle
+		display: inline-block
+	&__text
+		margin-right: 12px

@@ -1,0 +1,112 @@
+.form
+	&.is-success,
+	form.is-success
+		.form__out
+			display: none
+		.form__success
+			display: block
+	&.is-error,
+	form.is-error
+		.form__out
+			display: none
+		.form__error
+			display: block
+	&__success,
+	&__error
+		color: $charcoal-grey 
+		text-align: center
+		display: none
+		.title-md
+			font-weight: 400 
+	&__success-img
+		margin-top: 20px
+		img
+			margin: 0 auto
+			max-width: 281px
+			display: block
+	&__error
+		color: red
+
+.input, .textarea
+	padding: 13px 16px
+	width: 100%
+	height: 48px
+	font-family: $av
+	color: $charcoal-grey
+	font-size: 16px
+	border-radius: 14px 0
+	background-color: $white
+	transition: border-color .3s, width .3s, color .3s
+	border: solid 1px $silver
+	display: block
+	&::placeholder
+		color: $cool-grey
+	&:focus
+		&::placeholder
+			font-size: 0
+	&.is-error
+		border: solid 1px $coral-pink
+		color: $coral-pink
+		&::placeholder
+			color: $coral-pink
+	&.is-filled
+		border-color: $charcoal-grey
+	&:focus
+		border-color: $dodger-blue 
+	&:disabled
+		color: $silver
+		border: solid 1px $silver
+		cursor: default
+		&::placeholder
+			color: $silver
+	&_blue
+		border: solid 1px $dodger-blue
+	&_iris
+		border-color: $iris
+.input
+	&_lg
+		padding: 17px
+		height: 56px
+.textarea
+	padding: 16px
+	height: 180px
+	resize: none
+	
+.form-field
+	&:not(:first-child)
+		margin-top: 40px
+.info-group
+	&:not(:last-child)
+		margin-bottom: 40px
+	&__field
+		&:not(:last-child)
+			margin-bottom: 23px
+	&__item
+		position: relative
+		padding-left: 56px
+		font-weight: 300 
+		font-size: 24px
+		line-height: 1.375
+		color: $charcoal-grey
+		.icon
+			position: absolute
+			top: -6px
+			left: 0
+			font-size: 40px
+			color: $cool-grey 
+	&__label
+		margin-bottom: 12px
+		font-size: 12px
+		font-weight: 900
+		letter-spacing: 1px
+		text-transform: uppercase
+		color: $eggplant
+	&__link
+		color: $dodger-blue
+		transition: color .3s
+		+hover
+			color: lighten($dodger-blue, 20%) 
+a.info-group__item
+	transition: color .3s
+	+hover
+		color: lighten($charcoal-grey, 20%) 

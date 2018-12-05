@@ -1,0 +1,45 @@
+.post-list
+  &__item
+    margin-bottom: 40px
+.post
+  &__img
+    border-top-left-radius: 20px
+    border-bottom-right-radius: 20px
+    text-align: center
+    margin-bottom: 24px
+    img
+      max-width: 100%
+  &__categories-list
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    align-content: center
+    margin-bottom: 18px
+    &__item
+      margin-right: 16px
+    &__link
+      display: block
+      padding: 6px 8px
+      border: 2px solid $dodger-blue
+      border-radius: 20px
+      color: $dodger-blue
+      transition: background-color .3s, border-color .3s, color .3s
+      +f(16px,400,1)
+      &:hover
+        background: $dodger-blue
+        color: $white
+  &__title
+    display: block
+    color: $black
+    margin-bottom: 11px
+  p
+    color: $eggplant
+    +f(16px,400,1.56)
+    margin-bottom: 16px
+  &__info
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    align-content: center
+    +f(14px,400,1)
+    color: $cool-grey

@@ -1,0 +1,45 @@
+.item
+	position: relative
+	padding: 94px 0 16px 0
+	height: 100%
+	text-align: left
+	display: block
+	&__bg
+		position: absolute
+		top: 0
+		right: 0
+		left: 30px
+		bottom: 0
+		border-radius: 14px 0 14px
+		background-color: $light-blue
+		background-repeat: no-repeat
+		background-position: 160% 39px
+		background-size: 67%
+		+lg
+			background-position: 160% 60px
+			left: 24px
+	&__wrap
+		position: relative
+		z-index: 1
+		min-height: 103px
+	&__title
+		max-width: 190px
+		font-size: 24px
+		font-weight: 900
+		line-height: 1.4
+		text-align: left
+		color: $charcoal-grey
+	&__view
+		margin: 22px 0 0 46px
+		font-size: 14px
+		font-weight: 500
+		line-height: 1.14
+		text-align: left
+		color: $dodger-blue
+		transition: color .3s
+		display: block
+		+hover
+			color: $sky 
+		.icon
+			margin: 1px 0 0 4px
+			vertical-align: top

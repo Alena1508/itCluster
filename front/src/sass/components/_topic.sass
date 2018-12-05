@@ -1,0 +1,48 @@
+.topic
+	position: relative
+	padding: 162px 0 102px
+	color: $white 
+	text-align: center
+	overflow: hidden
+	background-image: linear-gradient(to bottom, $blue-with-a-hint-of-purple, $dodger-blue)
+	&_mod
+		background-image: linear-gradient(to top, $blue-with-a-hint-of-purple, $dodger-blue)
+	+sm
+		padding: 114px 0 40px
+	&__bg
+		position: absolute
+		top: 50px
+		left: 50%
+		margin-left: -837px
+		opacity: 0.08
+		pointer-events: none
+		.topic_mod &
+			position: absolute
+			top: 0
+			left: 50%
+			bottom: 0
+			margin-left: -720px
+			width: 1440px
+			opacity: 0.2
+	&__bg-left
+		position: absolute
+		left: -580px
+		top: 184px
+		+rotate(-50)
+	&__bg-right
+		position: absolute
+		right: -574px
+		top: 125px 
+		+rotate(56)
+	&__inner
+		position: relative
+		z-index: 1
+	&__wrap
+		margin: 0 auto
+		max-width: 958px
+	&__description
+		margin: 0 auto
+		margin-top: 16px
+		font-size: 24px
+	&__footer
+		margin-top: 40px

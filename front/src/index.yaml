@@ -1,0 +1,17 @@
+ProjectTitle: kyiv-it-cluster
+
+PageList:
+- file: page.html
+  ready: 100
+- file: contacts.html
+  ready: 100
+- file: catalogue.html
+  ready: 100
+- file: about.html
+  ready: 100
+- file: search.html
+  ready: 100
+- file: search_no_results.html
+  ready: 100
+- file: privacy_policy.html
+  ready: 100

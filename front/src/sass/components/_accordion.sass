@@ -1,0 +1,12 @@
+[data-accordion]
+	position: relative
+	&.is-open
+		.icon-arrow-top 
+			+rotate(0)
+[data-accordion-trigger]
+	display: block
+	.icon-arrow-top 
+		transition: transform .3s
+		+rotate(180)
+[data-accordion-container]
+	display: none

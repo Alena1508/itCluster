@@ -1,0 +1,202 @@
+.filter
+	margin-bottom: 39px
+	padding: 22px 0 18px
+	border-bottom: 1px solid #d0d0d0
+	+sm
+		padding-top: 0
+	&__label
+		margin-bottom: 8px
+		font-family: $av
+		font-size: 24px
+		color: $charcoal-grey
+	&__trigger
+		position: absolute
+		top: 0
+		left: 0
+		max-width: 100%
+		font-size: 16px
+		transition: color .3s
+		color: $purplish-grey
+		+hover
+			color: $dodger-blue
+		+sm
+			position: relative
+		.icon
+			margin-left: 4px
+			vertical-align: middle
+	&__topic
+		+clr
+		+sm
+			margin-top: 24px
+			width: 100%
+			order: 2
+			text-align: center
+	&__apply
+		float: right
+		+sm
+			float: none
+	&__wrap
+		margin-top: 24px
+		+sm
+			width: 100%
+			order: 1
+	&__col
+		+sm
+			margin-top: 8px
+	&__container
+		padding-bottom: 20px
+		margin-top: -22px
+		+sm
+			margin-top: -14px
+			padding-bottom: 6px
+	&__container-wrap
+		+sm
+			display: flex
+			flex-flow: row wrap
+select.select
+	display: none
+.select
+	position: relative
+	padding-top: 48px
+	font-size: 16px
+	&.sol-active
+		&.sol-selection-bottom .sol-inner-container
+			border-bottom-right-radius: 12px
+		.sol-inner-container
+			box-shadow: none
+			border: solid 1px $dodger-blue
+		.sol-selection-container
+			z-index: 9998
+			margin: -12px 0 0 0
+			padding: 20px 8px 5px 0
+			border: solid 1px $dodger-blue
+	.sol-inner-container
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 48px
+		line-height: 48px
+		border-radius: 12px 2px
+		border: solid 1px $silver
+	.sol-input-container
+		right: 0
+		input
+			padding: 13px 16px
+			font-family: $av
+			font-size: 16px
+	.sol-caret-container
+		display: none
+	.sol-selection-container
+		padding-right: 8px
+		background-color: $white
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2)
+	.sol-selection
+		&::-webkit-scrollbar
+			width: 4px
+		&::-webkit-scrollbar-track
+			background-color: $white
+		&::-webkit-scrollbar-thumb
+			background-color: $cool-grey
+			width: 4px
+			border-radius: 2px
+	.sol-checkbox
+		opacity: 0
+		&:checked
+			& + .sol-label-text
+				color: $dodger-blue
+				&:before
+					border-color: $dodger-blue
+					background-color: $dodger-blue
+	.sol-label
+		padding: 0 10px
+		user-select: none
+		cursor: pointer
+		&:before
+			position: absolute
+			content: ""
+			top: 4px
+			left: 19px
+			transform-origin: top right
+			width: 10px
+			height: 2px
+			+rotate(-45)
+			z-index: 1
+			background-color: $white
+		&:after
+			position: absolute
+			content: ""
+			top: 11px
+			left: 19px
+			width: 5px
+			height: 2px
+			transform-origin: top right
+			+rotate(45)
+			background-color: $white
+	.sol-label-text
+		padding-left: 32px
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 17px
+			width: 16px
+			height: 16px
+			border-radius: 2px
+			transition: border-color .3s, background-color .3s
+			border: 2px solid $purplish-grey
+	.sol-option
+		transition: color .3s
+		line-height: 1
+		&:not(:first-child)
+			margin-top: 16px
+	.sol-option.keyboard-selection,
+	.sol-selection:not(.sol-keyboard-navigation) .sol-option:hover
+		background: transparent
+		color: $dodger-blue
+		.sol-label-text:before
+			border-color: $dodger-blue
+	.sol-results-count,
+	.sol-selected-display-item
+		position: relative
+		margin: 4px 8px 4px 0
+		border: none
+		color: $white
+		font-family: $av
+		font-size: 16px
+		line-height: 1
+		border-radius: 28px
+	.sol-selected-display-item-text
+		padding: 8px 10px 8px 27px
+	.sol-quick-delete
+		position: absolute
+		top: 9px
+		left: 8px
+		width: 14px
+		height: 14px
+		padding: 0
+		font-size: 15px
+		line-height: 14px
+		text-align: center
+		border-radius: 50%
+		background-color: $white
+	.sol-current-selection
+		margin-top: 16px
+.select_engagement_model
+	.sol-results-count,
+	.sol-selected-display-item
+		background-color: $aqua-green
+	.sol-quick-delete
+		color: $aqua-green
+.select_domain
+	.sol-results-count,
+	.sol-selected-display-item
+		background-color: $dodger-blue
+	.sol-quick-delete
+		color: $dodger-blue
+.select_technology
+	.sol-results-count,
+	.sol-selected-display-item
+		background-color: $blue-with-a-hint-of-purple
+	.sol-quick-delete
+		color: $blue-with-a-hint-of-purple

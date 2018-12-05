@@ -1,0 +1,44 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+// Avenir
+@font-face
+	+fontdefault(normal, 900, 'Avenir')
+	+fontpath('Avenir Heavy', 'Avenir-Heavy', Avenir-Heavy)
+@font-face
+	+fontdefault(italic, 900, 'Avenir')
+	+fontpath('Avenir Heavy Oblique', 'Avenir-HeavyOblique', Avenir-HeavyOblique)
+	
+@font-face
+	+fontdefault(normal, 800, 'Avenir')
+	+fontpath('Avenir Heavy', 'Avenir-Heavy', Avenir-Heavy)
+@font-face
+	+fontdefault(italic, 800, 'Avenir')
+	+fontpath('Avenir Heavy Oblique', 'Avenir-HeavyOblique', Avenir-HeavyOblique)
+	
+@font-face
+	+fontdefault(normal, 500, 'Avenir')
+	+fontpath('Avenir Medium', 'Avenir-Medium', Avenir-Medium)
+@font-face
+	+fontdefault(italic, 500, 'Avenir')
+	+fontpath('Avenir Medium Oblique', 'Avenir-MediumOblique', Avenir-MediumOblique)
+	
+@font-face
+	+fontdefault(normal, 400, 'Avenir')
+	+fontpath('Avenir Book', 'Avenir-Book', Avenir-Book)
+@font-face
+	+fontdefault(italic, 400, 'Avenir')
+	+fontpath('Avenir Oblique', 'Avenir-Oblique', Avenir-Oblique)
+
+@font-face
+	+fontdefault(normal, 300, 'Avenir')
+	+fontpath('Avenir Light', 'Avenir-Light', Avenir-Light)
+@font-face
+	+fontdefault(italic, 300, 'Avenir')
+	+fontpath('Avenir Light Oblique', 'Avenir-LightOblique', Avenir-LightOblique)
+	
